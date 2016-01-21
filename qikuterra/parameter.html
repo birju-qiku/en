@@ -1,0 +1,585 @@
+﻿<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+        <title>Qiku Q terra</title>
+        <meta name="keywords" content="qiku,terra,mall">
+        <meta name="description" content="qiku mall">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="telephone=no" name="format-detection">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta name="viewport" content="width=device-width,user-scalable=yes" />
+        <link rel="stylesheet" href="../style/qikuterra/style.css"/>
+              <link rel="stylesheet" href="../inc/font-awesome/css/font-awesome.min.css"> <!-- Font Icons -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="../js/qikuterra/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="../js/qikuterra/common.js"></script>
+        <!--[if IE 6]>
+        <script type="text/javascript" src="../js/qikuterra/DD_belatedPNG_0.0.8a-min.js"></script>
+        <script>
+            DD_belatedPNG.fix('*');
+        </script>
+        <![endif]-->
+               <style type="text/css">
+        	/* ===== Begin footer ===== */
+.footer-top {
+	padding: 20px 0 35px;
+}
+.footer-top .col-md-4 {
+	margin-bottom: 25px;
+}
+.footer {
+	padding: 30px 0;
+}
+.footer a{
+	text-decoration: none;
+}
+/* Navbar links */
+.navbar-nav > li > a {
+	padding: 24px 0;
+	margin-left: 15px;
+    margin-right: 15px;
+	text-transform: none;
+	font-size: 13px;
+	font-weight: 600;
+}
+/* sub menus */
+.navbar-nav > li >  ul > li > a {
+	padding: 24px 0;
+	margin-left: 15px;
+    margin-right: 15px;
+	text-transform: none;
+	font-size: 13px;
+	font-weight: 600;
+	color:#000;
+	text-decoration:none;
+}
+.navbar-nav > li >  ul  {
+	display:none;
+	position:absolute;
+	z-index:1;
+	width:inherit;
+}
+.navbar-nav > li:hover >  ul  {
+	display:block;
+	margin-top:19px;
+}
+.navbar-nav > li >  ul > li {
+	display:block;
+	background:#E8382F;
+	text-align: center;
+    padding: 15px 0px;
+}
+.additional-bodered-nav {
+border:1px solid #E8382F;
+}
+/* Ends here */
+.navigation-img
+{
+	margin-top:17px;
+}
+/* Navbar dropdown */
+.dropdown-left {
+	left: 0 !important;
+	right: auto !important;
+}
+.dropdown-right {
+	right: 0 !important;
+	left: auto !important;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	background-color: transparent;
+}
+.navbar-default .dropdown-menu {
+	padding: 10px 0;
+}
+.dropdown-menu > li > a {
+	padding: 4px 20px;
+	text-transform: uppercase;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-menu > li > a.active, .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+	text-decoration: none;
+	background-color: transparent;
+}
+
+/* Navbar inverse dropdown */
+.navbar-inverse .dropdown-menu {
+	padding: 10px 0;
+}
+
+/* Navbar fixed */
+.navbar-fixed-top .container {
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.navbar-shrink {
+	z-index: 9999;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+.navbar-shrink .navbar-brand {
+	font-size: 20px;
+}
+.navbar-default.navbar-fixed-top.navbar-shrink .container {
+}
+.navbar-fixed-top.navbar-shrink .container {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+.navbar-default.navbar-fixed-top.navbar-shrink .navbar-nav > li > a {
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+/* Navbar transparent */
+.navbar-transparent {
+	background-color: rgba(0, 0, 0, 0);
+}
+.navbar-fixed-top.navbar-transparent .container {
+	padding-top: 30px;
+	padding-bottom: 0;
+}
+.navbar-fixed-bottom.navbar-transparent .container {
+	padding-top: 0;
+	padding-bottom: 30px;
+}
+.navbar-transparent .navbar-nav > li > a {
+	color: #FFF;
+}
+.navbar-transparent .navbar-brand, .navbar-transparent .navbar-brand:focus {
+	color: #FFF;
+}
+.navbar-nav>li {
+    float: left;
+}
+.nav>li {
+    position: relative;
+    display: block;
+    padding: 18px 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-transform: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+.navbar-right {
+    float: right!important;
+}
+.navbar-nav > li > a:hover,.navbar-nav > li > a:focus,.navbar-nav > li.active > a, .navbar-nav>.active>a {
+    color: #E8382F !important;
+}
+.navbar-nav > li > ul > li > a:hover,.navbar-nav > li > ul > li > a:focus,.navbar-nav > li > ul > li >.active > a {
+    color: #fff !important;
+}
+/* ===== End navbar ===== */
+                   a.footer-hyperlink {
+                       text-decoration: none;
+                       font-size: 14px !important;
+                       color: #676D75;
+                       font-family: 'Open Sans', sans-serif;
+                   }
+a.footer-hyperlink:hover, footer-hyperlink:focus,footer-hyperlink:active
+{
+	color:#E8382F;
+}
+                   .footer-text-color {
+                       color: #676D75 !important;
+                       font-size: 14px !important;
+                       font-family: 'Open Sans', sans-serif;
+                   }
+
+.col-md-3,.col-md-9,.col-md-12{
+	float:left;
+}
+.col-md-9 {
+    width: 75%;
+}
+.col-md-3 {
+    width: 25%;
+}
+.col-md-12 {
+    width: 100%;
+}
+.text-right {
+    text-align: right !important;
+}
+       </style>
+
+</head>
+
+<body>
+<div id="header" class="header" style="background-color: #F3F3F3;height:55px;">
+            <div class="container">
+                <div class="hd-title">
+                    <h2 class="name"><a href="/in/index.html"><img class="navigation-img" src="../img/qiku-logo.png"></a></h2>
+                </div>
+                    <ul class="nav navbar-nav navbar-right">
+                            <li><a class="page-scroll" href="/">Qiku Terra</a></li>
+                            <li><a class="page-scroll">All Products</a>
+                                <ul>
+                                    <li><a href="qikuterra.html">Q Terra</a></li>
+                                    <li><a href="#">Accessories</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="page-scroll" href="/in/360os.html">360OS</a></li>
+                            <li><a class="page-scroll">Community</a>
+                                <ul>
+                                    <li><a href="http://blog.qiku.com" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;Blog&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                                    <li><a href="https://forums.qiku.com" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;Forum&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                                </ul>
+                            </li>                        
+                            <li><a class="page-scroll">Global</a>
+                                <ul>
+                                    <li><a href="http://www.qiku.com/index.html">中国</a></li>
+                                    <li><a href="http://www.qiku.com/ru/qikuterra.html">Россия</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+               </div>
+        </div>
+
+<div id="header" class="header">
+	<div class="container">
+    	<div class="hd-title">
+        	<h2 class="name">Qiku Q Terra</h2>
+        </div>
+        <div class="fl ml30" style="float:right;">
+        	<ul class="hd-nav ">
+            	<li><a href="../qikuterra.html">Summary</a></li>
+                <li><a href="camera.html">Camera</a></li>
+                <li><a href="design.html">Craft & Design</a></li>
+                <li><a href="performance.html">Performance</a></li>
+                <li><a href="../360os.html" target="_blank">360OS</a></li>
+                <li><a href="parameter.html">Parameters</a></li>
+                <li><a href="photo.html">Gallery</a></li>
+               <!-- <li class="rb ml300 mt10 ri1"><a href="/">Home</a></li> -->
+                
+                <!-- <li class="rb ml5 mt10 ri3"><a href="http://www.qiku.com/zt/youth/default.html" target="_blank">Learn more about Qiku Luna</a></li> -->
+            </ul>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Params -->
+
+<!-- QiKU Terra -->
+<div class="container">
+    <div class="info-content clearfix  params">
+        <div class="leftbox">
+            <dl>
+                <dt>QiKU Q Terra</dt>
+            </dl>
+        </div>
+        <div class="rightbox">
+            <dl>
+                <dd><img src="../images/qikuterra/p-o.jpg"></dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<!-- capacity -->
+<div class="container">
+    <div class="info-content clearfix params">
+        <div class="leftbox">
+            <dl>
+                <dt>Capacity</dt>
+            </dl>
+        </div>
+        <div class="rightbox">
+            <dl>
+                <dd>LPDDR3 3GB RAM+16GB ROM EMMC5.0</dd>
+                <dd>LPDDR3 3GB RAM+32GB ROM EMMC5.0</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<!-- Camera -->
+<div class="container">
+    <div class="info-content clearfix  params">
+        <div class="leftbox">
+            <dl>
+                <dt>Camera</dt>
+            </dl>
+        </div>
+        <div class="rightbox">
+            <dl>
+                <dd><b>Intelligent Rear Dual Cameras</b></dd>
+                <dd>Sony IMX278 + Sony MONO (black & white）</dd>
+                <dd>13MP + 13MP</dd>
+                <dd>f/1.8 aperture</dd>
+                <dd>6P lenses</dd>
+                <dd>Tone flash LEDs</dd>
+                <dd>Support natural automatic focus</dd>
+                <dd>FotoNation 4.0 beautify</dd>
+                <dd>Mode: SLR, night, video(4K), photo, beauty, pro, Square</dd>
+                <dd>LongExposure, WaterMark, GIF, AudioImage, Refocus</dd>
+                <dd>Touch to take picture | Quick capture | Finger capture</dd>
+                <dd>Gesture capture</dd>
+                <dd>Face detect(face info save)</dd>
+                <dd>Record location when take picture</dd>
+                <dd>Timer picture (countdown)</dd>
+                <dd><b>Front Camera</b></dd>
+                <dd>8MP with 1.4 μm pixels</dd>
+                <dd>Grid line</dd>
+                <dd>Face detect(face info save)</dd>
+                <dd>Front photo mirror</dd>
+
+            </dl>
+        </div>
+    </div>
+</div>
+
+<!-- Display -->
+<div class="container">
+    <div class="info-content clearfix params">
+        <div class="leftbox">
+            <dl>
+                <dt>Display</dt>
+            </dl>
+        </div>
+        <div class="rightbox">
+            <dl>
+                <dd><img src="../images/qikuterra/p-display.jpg" alt=""></dd>
+                <dd>6.0 inch<br/>FHD 1920x1080 resolution (eye-friendly)</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<!-- Processor -->
+<div class="container">
+    <div class="info-content clearfix  params">
+        <div class="leftbox">
+            <dl>
+                <dt>Processor</dt>
+            </dl>
+        </div>
+        <div class="rightbox">
+            <dl>
+                <dd><img src="../images/qikuterra/p-processor.jpg"></dd>
+                <dd class="processor">Qualcomm© Snapdragon™ 808<br/>Adreno418 GPU</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<!-- Battery -->
+<div class="container">
+    <div class="info-content clearfix params">
+        <div class="leftbox">
+            <dl>
+                <dt>Battery</dt>
+            </dl>
+        </div>
+        <div class="rightbox">
+            <dl>
+                <dd>3700mAh</dd>
+                <dd>Fast charge (9V / 2.2A, 5V / 2A, 5V / 1A)</dd>
+                <dd>Turbo Fast Charge Technology</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<!-- Wireless connection -->
+<div class="container">
+    <div class="info-content clearfix params">
+        <div class="leftbox">
+            <dl>
+                <dt>Wireless connection</dt>
+            </dl>
+        </div>
+        <div class="rightbox">
+            <dl>
+                <dd><img src="../images/qikuterra/wuxian.jpg" width="100%"></dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<!-- Sensor -->
+<div class="container">
+    <div class="info-content clearfix params">
+        <div class="leftbox">
+            <dl>
+                <dt>Sensor</dt>
+            </dl>
+        </div>
+        <div class="rightbox">
+            <dl>
+                <dd><img src="../images/qikuterra/cg.jpg" width="100%"></dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<!-- Navigation -->
+<div class="container">
+    <div class="info-content clearfix params">
+        <div class="leftbox">
+            <dl>
+                <dt>Navigation</dt>
+            </dl>
+        </div>
+        <div class="rightbox">
+            <dl>
+                <dd><img src="../images/qikuterra/daoh.jpg" width="100%"></dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<!-- Audio 
+<div class="container">
+    <div class="info-content clearfix params">
+        <div class="leftbox">
+            <dl>
+                <dt>Audio</dt>
+            </dl>
+        </div>
+        <div class="rightbox">
+            <dl>
+                <dd>DAC chip (ESS ES9018K2M)</dd>
+                <dd>Support 192kHz/24bit</dd>
+                <dd>Refrequency from 10Hz to 96kHz</dd>
+            </dl>
+        </div>
+    </div>
+</div>-->
+
+<!-- Video -->
+<div class="container">
+    <div class="info-content clearfix params">
+        <div class="leftbox">
+            <dl>
+                <dt>Video/Audio/Picture</dt>
+            </dl>
+        </div>
+        <div class="rightbox">
+            <dl>
+                <dd><img src="../images/qikuterra/video.jpg" width="100%"></dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<!-- Buttons -->
+<div class="container">
+    <div class="info-content clearfix params">
+        <div class="leftbox">
+            <dl>
+                <dt>Buttons</dt>
+            </dl>
+        </div>
+        <div class="rightbox">
+            <dl>
+                <dd><img src="../images/qikuterra/anjian.jpg" width="100%"></dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<!-- Connectivity -->
+<div class="container">
+    <div class="info-content clearfix params">
+        <div class="leftbox">
+            <dl>
+                <dt>Connectivity</dt>
+            </dl>
+        </div>
+        <div class="rightbox">
+            <dl>
+                <dd>TDD-LTE ：B38/B39/B40/B41 </dd>
+                <dd>FDD-LTE： B1/B3/B7</dd>
+                <dd>TD-SCDMA ：B34/B39</dd>
+                <dd>WCDMA：B1/B2/B5/B8</dd>
+                <dd>GSM：B2/B3/B5/B8</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<!-- OS -->
+<div class="container">
+    <div class="info-content clearfix params">
+        <div class="leftbox">
+            <dl>
+                <dt>OS</dt>
+            </dl>
+        </div>
+        <div class="rightbox">
+            <dl>
+                <dd>360 OS</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<footer class="text-off-white">
+            
+                <div class="">
+                	<div class="container">
+                    	<div class="row wow bounceInLeft" data-wow-delay="0.4s">
+
+                            <div class="col-md-9 footer-text-color"><br><br><br>Customer Service support@qiku.com</div>
+                            <div class="col-md-3 text-right footer-text-color text-align-centralize"><br><br><br><i class="fa fa-phone"></i>&nbsp;&nbsp;hotline (+86)0755-83308000</div>
+                            <div class="col-md-12 col-sm-12 col-xs-12"><p style="line-height:12px;">&nbsp;</p><a href="#" class="footer-hyperlink">About Qiku</a>&nbsp;|&nbsp;<a target="_blank" href="https://gadgets360.com/shop/qiku-q-terra-silver-16-gb-3235322d333938" class="footer-hyperlink">
+                            Where to Buy</a>&nbsp;|&nbsp;<a href="http://blog.qiku.com/index.php/2015/12/02/q-invites/" class="footer-hyperlink">Q-Invite</a><p style="line-height:12px;">&nbsp;</p></div>
+                            <div class="col-md-9 footer-text-color">&copy; 2016 Qiku Internet Network Scientific (Shenzhen) Co. Ltd. All rights reserved</div>
+                            <div class="col-md-3 text-right text-align-centralize"><a href="https://www.facebook.com/QikuIN/" target="_blank" class="footer-hyperlink"><i class="fa fa-facebook f_14"></i></a>&nbsp;&nbsp;
+                            <!--<a href="" class="footer-hyperlink"><i class="fa fa-instagram f_14"></i></a>&nbsp;&nbsp;-->
+                            <a href="https://twitter.com/qikuindia" target="_blank" class="footer-hyperlink"><i class="fa fa-twitter f_14"></i></a>&nbsp;&nbsp;<br><br><br>
+                            <!--<a href="" class="footer-hyperlink"><i class="fa fa-google-plus f_14"></i></a> -->
+                            </div>
+                        </div> <!-- /.row -->
+                    </div> <!-- /.container -->
+                </div>
+                
+            </footer>
+
+<script type="text/javascript">
+$(function() {
+	var side = $(".leftside ul li");
+	window.onscroll = function(){
+		var t = $(document).scrollTop(), h = $(window).height();
+		$(".info-item").each(function(e){
+			var a = $(this).offset().top;
+			if(t > a-10){
+				$(side).removeClass("active");
+				$(side).eq(e).addClass("active");
+			}
+		});
+	}
+	$(side).click(function(){
+		_this = this,
+        $("html, body").animate({
+            scrollTop: $(".info-item").eq($(this).index()).offset().top
+        },
+        500,
+        function() {
+            $(side).removeClass("active"),
+            $(_this).addClass("active")
+        })
+	});
+	$(".colors li").on("click",function(){
+		var i = $(this).index(), img = $(".appearance img").eq(i);
+		$(this).addClass("on");
+		$(this).siblings().removeClass("on");
+		img.fadeIn(100);
+		img.siblings().fadeOut(100);
+	})
+})
+</script>
+    <script type="text/javascript" src="http://js.qiku.com/js/o_code.js"></script>
+
+</body>
+</html>

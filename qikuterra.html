@@ -1,0 +1,468 @@
+﻿
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>qiku terra</title>
+        <meta name="keywords" content="qiku,terra,mall">
+        <meta name="description" content="qiku mall">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="telephone=no" name="format-detection">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta name="viewport" content="width=device-width,user-scalable=yes" />
+        <link rel="stylesheet" href="style/qikuterra/style.css"/> 
+		<link rel="stylesheet" href="inc/animations/css/animate.min.css">
+		<link rel="stylesheet" href="inc/font-awesome/css/font-awesome.min.css"> <!-- Font Icons -->
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans|Source+Sans+Pro|Roboto' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="js/qikuterra/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="js/qikuterra/common.js"></script>
+        <script type="text/javascript" src="js/qikuterra/qiku.js"></script>
+        <!--<script src="inc/jquery/jquery-1.11.1.min.js"></script>-->
+
+        <script src="inc/bootstrap/js/bootstrap.min.js"></script>
+        <script src="inc/animations/js/wow.min.js"></script>
+        <script src="inc/smoothscroll.js"></script>
+        <!--[if IE 6]>
+        <script type="text/javascript" src="js/qikuterra/DD_belatedPNG_0.0.8a-min.js"></script>
+        <script>
+            DD_belatedPNG.fix('*');
+        </script>
+        <![endif]-->
+        <style type="text/css">
+        	/* ===== Begin footer ===== */
+.footer-top {
+	padding: 20px 0 35px;
+}
+.footer-top .col-md-4 {
+	margin-bottom: 25px;
+}
+.footer {
+	padding: 30px 0;
+}
+.footer a{
+	text-decoration: none;
+}
+/* Navbar links */
+.navbar-nav > li > a {
+	padding: 24px 0;
+	margin-left: 15px;
+    margin-right: 15px;
+	text-transform: none;
+	font-size: 13px;
+	font-weight: 600;
+}
+/* sub menus */
+.navbar-nav > li >  ul > li > a {
+	padding: 24px 0;
+	margin-left: 15px;
+    margin-right: 15px;
+	text-transform: none;
+	font-size: 13px;
+	font-weight: 600;
+	color:#000;
+	text-decoration:none;
+}
+.navbar-nav > li >  ul  {
+	display:none;
+	position:absolute;
+	z-index:1;
+	width:inherit;
+}
+.navbar-nav > li:hover >  ul  {
+	display:block;
+	margin-top:19px;
+}
+.navbar-nav > li >  ul > li {
+	display:block;
+	background:#E8382F;
+	text-align: center;
+    padding: 15px 0px;
+}
+.additional-bodered-nav {
+border:1px solid #E8382F;
+}
+/* Ends here */
+.navigation-img
+{
+	margin-top:17px;
+}
+/* Navbar dropdown */
+.dropdown-left {
+	left: 0 !important;
+	right: auto !important;
+}
+.dropdown-right {
+	right: 0 !important;
+	left: auto !important;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	background-color: transparent;
+}
+.navbar-default .dropdown-menu {
+	padding: 10px 0;
+}
+.dropdown-menu > li > a {
+	padding: 4px 20px;
+	text-transform: uppercase;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-menu > li > a.active, .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+	text-decoration: none;
+	background-color: transparent;
+}
+
+/* Navbar inverse dropdown */
+.navbar-inverse .dropdown-menu {
+	padding: 10px 0;
+}
+
+/* Navbar fixed */
+.navbar-fixed-top .container {
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.navbar-shrink {
+	z-index: 9999;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+.navbar-shrink .navbar-brand {
+	font-size: 20px;
+}
+.navbar-default.navbar-fixed-top.navbar-shrink .container {
+}
+.navbar-fixed-top.navbar-shrink .container {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+.navbar-default.navbar-fixed-top.navbar-shrink .navbar-nav > li > a {
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+/* Navbar transparent */
+.navbar-transparent {
+	background-color: rgba(0, 0, 0, 0);
+}
+.navbar-fixed-top.navbar-transparent .container {
+	padding-top: 30px;
+	padding-bottom: 0;
+}
+.navbar-fixed-bottom.navbar-transparent .container {
+	padding-top: 0;
+	padding-bottom: 30px;
+}
+.navbar-transparent .navbar-nav > li > a {
+	color: #FFF;
+}
+.navbar-transparent .navbar-brand, .navbar-transparent .navbar-brand:focus {
+	color: #FFF;
+}
+.navbar-nav>li {
+    float: left;
+}
+.nav>li {
+    position: relative;
+    display: block;
+    padding: 18px 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-transform: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+.navbar-right {
+    float: right!important;
+}
+.navbar-nav > li > a:hover,.navbar-nav > li > a:focus,.navbar-nav > li.active > a, .navbar-nav>.active>a {
+    color: #E8382F !important;
+}
+.navbar-nav > li > ul > li > a:hover,.navbar-nav > li > ul > li > a:focus,.navbar-nav > li > ul > li >.active > a {
+    color: #fff !important;
+}
+/* ===== End navbar ===== */
+            a.footer-hyperlink {
+                text-decoration: none;
+                font-size: 14px !important;
+                color: #676D75;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 300;
+            }
+a.footer-hyperlink:hover, footer-hyperlink:focus,footer-hyperlink:active
+{
+	color:#E8382F;
+}
+            .footer-text-color {
+                color: #676D75 !important;
+                font-size: 14px !important;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 300;
+            }
+
+.col-md-3,.col-md-9,.col-md-12{
+	float:left;
+}
+.col-md-9 {
+    width: 75%;
+}
+.col-md-3 {
+    width: 25%;
+}
+.col-md-12 {
+    width: 100%;
+}
+.text-right {
+    text-align: right !important;
+}
+            /* Scroll to top button */
+            .scrolltotop {
+                position: fixed;
+                display: none;
+                bottom: 20px;
+                right: 30px;
+                width: 34px;
+                height: 34px;
+                line-height: 34px;
+                text-align: center;
+                text-decoration: none;
+                z-index: 9999;
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+
+                .scrolltotop .fa {
+                    padding-left: 4px;
+                    -webkit-transform: rotate(-45deg);
+                    -moz-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                }
+
+       </style>
+    </head>
+<body data-spy="scroll">
+    <div id="header" class="header" style="background-color: #F3F3F3;height:55px;">
+        <div class="container">
+            <div class="hd-title">
+                <h2 class="name"><a href="/in/index.html"><img class="navigation-img" src="img/qiku-logo.png"></a></h2>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="page-scroll" href="qikuterra.html">Qiku Terra</a></li>
+                <li>
+                    <a class="page-scroll">All Products</a>
+                    <ul>
+                        <li><a href="/">Q Terra</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </li>
+                <li><a class="page-scroll" href="/in/360os.html">360OS</a></li>
+                <li>
+                    <a class="page-scroll">Community</a>
+                    <ul>
+                        <li><a href="http://blog.qiku.com" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;Blog&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                        <li><a href="https://forums.qiku.com" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;Forum&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="page-scroll">Global</a>
+                    <ul>
+                        <li><a href="http://www.qiku.com/index.html">中国</a></li>
+                        <li><a href="http://www.qiku.com/ru/qikuterra.html">Россия</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="header" class="header">
+        <div class="container">
+            <div class="hd-title">
+                <h2 class="name">QiKU Q Terra</h2>
+            </div>
+            <div class="fl ml30" style="float:right;">
+                <ul class="hd-nav">
+                    <li><a href="qikuterra.html">Summary</a></li>
+                    <li><a href="qikuterra/camera.html">Camera</a></li>
+                    <li><a href="qikuterra/design.html">Craft & Design</a></li>
+                    <li><a href="qikuterra/performance.html">Performance</a></li>
+                    <li><a href="360os.html" target="_blank">360OS</a></li>
+                    <li><a href="qikuterra/parameter.html">Parameters</a></li>
+                    <li><a href="qikuterra/photo.html">Gallery</a></li>
+                    <!--<li class="rb ml300 mt10 ri1"><a href="/in" >HOME</a></li>-->
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="section function01 animate-init">
+        <div class="container">
+            <div class="content item1" data-countdown="true">
+                <div class="titlename">
+                    <h2>QiKU Q Terra</h2>
+                    <h3>Born to Be A Game Changer<br /><i>#TheUltimateFlagship</i></h3>
+                    <!-- <img src="./images/qikuterra/logotitle.png" width="402" height="138" alt=""/> -->
+                </div>
+                <p class="fun01-desc1">Color IMX278 + MONO IMX214</p>
+                <p class="fun01-desc2">83% Display Ratio</p>
+                <p class="fun01-desc3">Full-Metal Unibody Design</p>
+                <p class="fun01-desc4">Snapdragon 808</p>
+                <p class="fun01-desc5">Sharp 1080P Screen</p>
+                <p class="fun01-desc6">165° Arc Curved Design</p>
+                <p class="fun01-desc7">2.5D Arc Glass</p>
+                <p class="fun01-desc8">3700mAh Battery </p>
+                <p class="fun01-desc9">1.4mm Ultra Narrow Bezel</p>
+                <p class="fun01-desc10">Turbo Fast Charge</p>
+            </div>
+            <div class="img">
+                <div class="fun01-img1"><img src="./images/qikuterra/img1-1.png" width="467" height="1092" alt="" /></div>
+                <div class="fun01-img2"><img src="./images/qikuterra/img1-2.png" width="469" height="1019" alt="" /></div>
+                <div class="fun01-img3"><img src="./images/qikuterra/img1-3.png" width="1920" height="395" alt="" /></div>
+                <div class="fun01-img4"><img src="./images/qikuterra/img1-yy.png" width="84" height="682" alt="" /></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section function02 animate-init">
+        <div class="container">
+            <div class="content">
+                <h3 class="h3">Intelligent Dual Rear Cameras<br />13MP + 13MP</h3>
+                <p class="desc">QiKU Terra boasts the strongest cameras in the smartphone industry to date. When shooting moments, it takes advantage of the dual rear cameras unique design even without ugly protrusion. The subjects are autofocused within 0.1 second by instant triangulation. Within QiKU Terra, you are going to enjoy the best camera performance, brilliant than ever.</p>
+                <p class="linka"><a class="linka" href="qikuterra/camera.html" target="_blank">Learn more about cameras ></a></p>
+
+            </div>
+            <div class="img">
+                <div class="img2-1"><img src="./images/qikuterra/img2-1.png" width="830" height="741" alt="" /></div>
+                <div class="img2-2"><img src="./images/qikuterra/img2-2.png" width="618" height="377" alt="" /></div>
+                <div class="img2-3"><img src="./images/qikuterra/img2-3.png" width="618" height="377" alt="" /></div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section function03 animate-init">
+        <div class="container">
+            <div class="content">
+                <h3 class="h3">A Sense of Beauty</h3>
+                <p class="desc">QiKU designers never stop pursuing beauty.<br /><br /><span style="letter-spacing:0.2px;">Ergonomic, transparent 2.5D glass is the perfect choice for Sharp's next-generation, super-radiant screen.</span><br /><span style="letter-spacing:0.7px;">At just 1.4 mm wide, the narrow bezel gives the phone an astounding screen-to-body ratio of 83 percent.</span><br /><br />It's time to take a multimedia journey with the QiKU phone in hand.</p>
+                <p class="linka"><a class="linka" href="qikuterra/design.html" target="_blank">Learn more about designs and craftsmanship ></a></p>
+            </div>
+            <div class="img">
+                <div class="img3"><img src="./images/qikuterra/img3.png" alt="" /></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section function04 animate-init">
+        <div class="container">
+            <div class="content">
+                <h3 class="h3">Faster, Higher, and Stronger<br />Evolving towards An Optimum <br />Experience</h3>
+                <p class="desc">"Faster, higher, and stronger" is the Olympic spirit of people who <br />challenge their limits. It is also the goal that QiKU phones pursue for<br /> the ultimate user experience.We consistently develop high-quality <br />phones that are faster and offer an improved performance and better <br />experience. The answer is to use a more powerful chip.</p>
+                <p><a class="linka" href="qikuterra/performance.html" target="_blank" target="_blank">Learn more about performance ></a></p>
+                <p class="logo04"><img src="./images/qikuterra/img4-2.png" width="143" height="92" alt="" /></p>
+            </div>
+            <div class="img">
+                <div class="img4-1"><img src="./images/qikuterra/img4-1.png" alt="" /></div>
+                <div class="cpuname1">
+                    <p class="p1-n">Snapdragon 808</p>
+                    <p class="p2-n">64-bit Processor</p>
+                </div>
+                <div class="cpuname2">
+                    <p class="p1-n">3GB+16/32GB</p>
+                    <p class="p2-n">LPDDR3 memory</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section function05 animate-init">
+        <div class="container">
+            <div class="content">
+                <h3 class="h3">6" Ultra Display      Bigger Is Always Better</h3>
+                <p class="desc">Bigger is always better once you are used to a much bigger <br />handset. This is why more and more people prefer a phablet <br />nowadays than ever. The stunning 6-inch Sharp 1080P <br />super-radiant screen has a saturation of 95% and an ultra <br /> high 1400:1 contrast ratio to offer a powerful vision full of<br /> bright colors.</p>
+                <h3 class="h31">Sharp 1080P Screen</h3>
+                <!-- <p class="desc1">å±å¹•</p> -->
+                <h3 class="h32">1920*1080 </h3>
+                <!-- <p class="desc2">åˆ†è¾¨çŽ‡</p> -->
+                <h3 class="h33">368</h3>
+                <p class="desc3">PPI</p>
+            </div>
+            <div class="img">
+                <div class="img5"><img src="./images/qikuterra/img5.png" width="652" height="935" alt="" /></div>
+                <div class="img5-yy"><img src="./images/qikuterra/img5-yy.png" width="955" height="971" alt="" /></div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section function06 animate-init">
+        <div class="container">
+            <div class="content">
+                <h3 class="h3">T-type Battery<br />3700mAh Long-lasting Battery</h3>
+                <p class="desc">QiKU Terra adopts the T-type battery with up to 3700mAh capacity and a minimum thickness of merely 3.5mm.</p>
+            </div>
+            <div class="img">
+                <div class="img6-1"><img src="./images/qikuterra/img6-1.png" width="947" height="204" alt="" /></div>
+                <div class="img6-2"><img src="./images/qikuterra/img6-2.png" width="947" height="186" alt="" /></div>
+                <div class="img6-3"><img src="./images/qikuterra/img6-3.png" width="947" height="358" alt="" /></div>
+            </div>
+        </div>
+    </div>
+    <div class="section function08 animate-init">
+        <div class="container">
+            <div class="content">
+                <h3 class="h3"><img src="./images/qikuterra/img8-1.png" width="500" height="129" alt="" /></h3>
+                <p class="desc">
+                    Strengthening functionality with end-to-end safety represents a milestone for QiKU's system-level approach. Thanks to more than 2,500 experts involved in the safety engineering of the Qihoo 360, users can enjoy the convenience of high-tech features without any of the risks.
+                    Smooth operation combined with full safety is a great triumph. In addition to the bottom-layer optimization of Android system, any app can be uninstalled from the QiKU phone, resulting in greater stability and smoother use without any lag or stutter.
+                </p>
+                <p class="linka"><a class="linka" href="360os.html" target="_blank" target="_blank">Learn more about 360OS></a></p>
+            </div>
+            <div class="img">
+                <div class="img8-2"><img src="./images/qikuterra/img8-2.png" width="187" height="600" alt="" /></div>
+                <div class="img8-3"><img src="./images/qikuterra/img8-3.png" width="187" height="600" alt="" /></div>
+                <div class="img8-4"><img src="./images/qikuterra/img8-4.png" width="187" height="600" alt="" /></div>
+                <div class="img8-5"><img src="./images/qikuterra/img8-5.png" width="187" height="600" alt="" /></div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-off-white">
+
+        <div class="">
+            <div class="container">
+                <div class="row wow bounceInLeft" data-wow-delay="0.4s">
+
+                    <div class="col-md-9 footer-text-color"><br><br><br>Customer Service support@qiku.com</div>
+                    <div class="col-md-3 text-right footer-text-color text-align-centralize"><br><br><br><i class="fa fa-phone"></i>&nbsp;&nbsp;hotline (+86)0755-83308000</div>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <p style="line-height:12px;">&nbsp;</p><a href="#" class="footer-hyperlink">About Qiku</a>&nbsp;|&nbsp;<a target="_blank" href="https://gadgets360.com/shop/qiku-q-terra-silver-16-gb-3235322d333938" class="footer-hyperlink">
+    Where to Buy
+</a>&nbsp;|&nbsp;<a href="http://blog.qiku.com/index.php/2015/12/02/q-invites/" class="footer-hyperlink">Q-Invite</a><p style="line-height:12px;">&nbsp;</p>
+                    </div>
+                    <div class="col-md-9 footer-text-color">&copy; 2016 Qiku Internet Network Scientific (Shenzhen) Co. Ltd. All rights reserved</div>
+                    <div class="col-md-3 text-right text-align-centralize">
+                        <a href="https://www.facebook.com/QikuIN/" target="_blank" class="footer-hyperlink"><i class="fa fa-facebook f_14"></i></a>&nbsp;&nbsp;
+                        <!--<a href="" class="footer-hyperlink"><i class="fa fa-instagram f_14"></i></a>&nbsp;&nbsp;-->
+                        <a href="https://twitter.com/qikuindia" target="_blank" class="footer-hyperlink"><i class="fa fa-twitter f_14"></i></a>&nbsp;&nbsp;<br><br><br>
+                        <!--<a href="" class="footer-hyperlink"><i class="fa fa-google-plus f_14"></i></a> -->
+                    </div>
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div>
+    </footer>
+
+</body>
+</html>

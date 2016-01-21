@@ -1,0 +1,415 @@
+﻿<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+        <meta charset="utf-8">
+        <title>Qiku Q terra</title>
+        <meta name="keywords" content="qiku,terra,mall">
+        <meta name="description" content="qiku mall">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="telephone=no" name="format-detection">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta name="viewport" content="width=device-width,user-scalable=yes" />
+         <link rel="stylesheet" href="../inc/font-awesome/css/font-awesome.min.css"> <!-- Font Icons -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../style/qikuterra/style.css"/>
+        <script type="text/javascript" src="../js/qikuterra/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="../js/qikuterra/common.js"></script>
+        <!--[if IE 6]>
+        <script type="text/javascript" src="js/qikuterra/DD_belatedPNG_0.0.8a-min.js"></script>
+        <script>
+            DD_belatedPNG.fix('*');
+        </script>
+        <![endif]-->
+        <style type="text/css">
+        	/* ===== Begin footer ===== */
+.footer-top {
+	padding: 20px 0 35px;
+}
+.footer-top .col-md-4 {
+	margin-bottom: 25px;
+}
+.footer {
+	padding: 30px 0;
+}
+.footer a{
+	text-decoration: none;
+}
+/* Navbar links */
+.navbar-nav > li > a {
+	padding: 24px 0;
+	margin-left: 15px;
+    margin-right: 15px;
+	text-transform: none;
+	font-size: 13px;
+	font-weight: 600;
+}
+/* sub menus */
+.navbar-nav > li >  ul > li > a {
+	padding: 24px 0;
+	margin-left: 15px;
+    margin-right: 15px;
+	text-transform: none;
+	font-size: 13px;
+	font-weight: 600;
+	color:#000;
+	text-decoration:none;
+}
+.navbar-nav > li >  ul  {
+	display:none;
+	position:absolute;
+	z-index:1;
+	width:inherit;
+}
+.navbar-nav > li:hover >  ul  {
+	display:block;
+	margin-top:19px;
+}
+.navbar-nav > li >  ul > li {
+	display:block;
+	background:#E8382F;
+	text-align: center;
+    padding: 15px 0px;
+}
+.additional-bodered-nav {
+border:1px solid #E8382F;
+}
+/* Ends here */
+.navigation-img
+{
+	margin-top:17px;
+}
+/* Navbar dropdown */
+.dropdown-left {
+	left: 0 !important;
+	right: auto !important;
+}
+.dropdown-right {
+	right: 0 !important;
+	left: auto !important;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	background-color: transparent;
+}
+.navbar-default .dropdown-menu {
+	padding: 10px 0;
+}
+.dropdown-menu > li > a {
+	padding: 4px 20px;
+	text-transform: uppercase;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-menu > li > a.active, .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+	text-decoration: none;
+	background-color: transparent;
+}
+
+/* Navbar inverse dropdown */
+.navbar-inverse .dropdown-menu {
+	padding: 10px 0;
+}
+
+/* Navbar fixed */
+.navbar-fixed-top .container {
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.navbar-shrink {
+	z-index: 9999;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+.navbar-shrink .navbar-brand {
+	font-size: 20px;
+}
+.navbar-default.navbar-fixed-top.navbar-shrink .container {
+}
+.navbar-fixed-top.navbar-shrink .container {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+.navbar-default.navbar-fixed-top.navbar-shrink .navbar-nav > li > a {
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+/* Navbar transparent */
+.navbar-transparent {
+	background-color: rgba(0, 0, 0, 0);
+}
+.navbar-fixed-top.navbar-transparent .container {
+	padding-top: 30px;
+	padding-bottom: 0;
+}
+.navbar-fixed-bottom.navbar-transparent .container {
+	padding-top: 0;
+	padding-bottom: 30px;
+}
+.navbar-transparent .navbar-nav > li > a {
+	color: #FFF;
+}
+.navbar-transparent .navbar-brand, .navbar-transparent .navbar-brand:focus {
+	color: #FFF;
+}
+.navbar-nav>li {
+    float: left;
+}
+.nav>li {
+    position: relative;
+    display: block;
+    padding: 18px 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-transform: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+.navbar-right {
+    float: right!important;
+}
+.navbar-nav > li > a:hover,.navbar-nav > li > a:focus,.navbar-nav > li.active > a, .navbar-nav>.active>a {
+    color: #E8382F !important;
+}
+.navbar-nav > li > ul > li > a:hover,.navbar-nav > li > ul > li > a:focus,.navbar-nav > li > ul > li >.active > a {
+    color: #fff !important;
+}
+/* ===== End navbar ===== */
+            a.footer-hyperlink {
+                text-decoration: none;
+                font-size: 14px !important;
+                color: #676D75;
+                font-family: 'Open Sans', sans-serif;
+            }
+a.footer-hyperlink:hover, footer-hyperlink:focus,footer-hyperlink:active
+{
+	color:#E8382F;
+}
+            .footer-text-color {
+                color: #676D75 !important;
+                font-size: 14px !important;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+.col-md-3,.col-md-9,.col-md-12{
+	float:left;
+}
+.col-md-9 {
+    width: 75%;
+}
+.col-md-3 {
+    width: 25%;
+}
+.col-md-12 {
+    width: 100%;
+}
+.text-right {
+    text-align: right !important;
+}
+       </style>
+
+</head>
+<body>
+<div id="header" class="header" style="background-color: #F3F3F3;height:55px;">
+            <div class="container">
+                <div class="hd-title">
+                    <h2 class="name"><a href="/in/index.html"><img class="navigation-img" src="../img/qiku-logo.png"></a></h2>
+                </div>
+                    <ul class="nav navbar-nav navbar-right">
+                            <li><a class="page-scroll" href="/">Qiku Terra</a></li>
+                            <li><a class="page-scroll">All Products</a>
+                                <ul>
+                                    <li><a href="qikuterra.html">Q Terra</a></li>
+                                    <li><a href="#">Accessories</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="page-scroll" href="/in/360os.html">360OS</a></li>
+                            <li><a class="page-scroll">Community</a>
+                                <ul>
+                                    <li><a href="http://blog.qiku.com" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;Blog&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                                    <li><a href="https://forums.qiku.com" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;Forum&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                                </ul>
+                            </li>                        
+                            <li><a class="page-scroll">Global</a>
+                                <ul>
+                                    <li><a href="http://www.qiku.com/index.html">中国</a></li>
+                                    <li><a href="http://www.qiku.com/ru/qikuterra.html">Россия</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+               </div>
+        </div>
+
+<div id="header" class="header">
+	<div class="container">
+    	<div class="hd-title">
+        	<h2 class="name">Qiku Q Terra</h2>
+        </div>
+        <div class="fl ml30" style="float:right;">
+        	<ul class="hd-nav ">
+            	<li><a href="../qikuterra.html">Summary</a></li>
+                <li><a href="camera.html">Camera</a></li>
+                <li><a href="design.html">Craft & Design</a></li>
+                <li><a href="performance.html">Performance</a></li>
+                <li><a href="../360os.html" target="_blank">360OS</a></li>
+                <li><a href="parameter.html">Parameters</a></li>
+                <li><a href="photo.html">Gallery</a></li>
+              <!--  <li class="rb ml300 mt10 ri1"><a href="/" >Home</a></li> -->
+                
+                <!-- <li class="rb ml5 mt10 ri3"><a href="http://www.qiku.com/zt/youth/default.html" target="_blank">Learn more about Qiku Luna</a></li> -->
+            </ul>
+            
+        </div>
+    </div>
+</div>
+
+<div class="section sj-function01 animate-init">
+	<div class="container">
+        <div class="content">
+        	<h3 class="h3">2.5D glass<br/>Crystal clear, smooth and fine</h3>
+            <p class="desc">Terra will take you on an extraordinary visual and usage tour. The 2.5D glass screen outshines ordinary<br/> glass with its round edge and super transparency. Fall in love the minute you touch the sparkling screen.</p>
+        </div>
+        <div class="img">
+        	<div class="sj1-1"><img src="../images/qikuterra/sj1-1.png" width="360" height="601"  alt=""/></div>
+            <div class="sj1-2"><img src="../images/qikuterra/sj1-2.png" width="488" height="695"  alt=""/></div>
+        </div>
+    </div>
+</div>
+
+<div class="section sj-function02 animate-init">
+	<div class="container">
+        <div class="content">
+        	<h3 class="h3">83% display ratio 1.4mm side bezel<br/>Bigger Is Always Better</h3>
+            <p class="desc">Astounding screen-to-body ratio of 83 percent, 1.4 mm ultra-narrow bezel
+The freedom to be delighted. <br/>Terra boasts an astounding screen-to-body ratio of 83 percent, and a bezel width of just 1.4 mm. <br/>The exquisite design gives a perfect appearance of Terra, and bringing the optimum experience.
+</p>
+        </div>
+        <div class="img">
+        	<div class="sj2"><img src="../images/qikuterra/sj2.jpg" width="1111" height="624" alt=""/></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section sj-function03 animate-init">
+	<div class="container">
+        <div class="content">
+        	<h3 class="h3">Full-Metal Unibody Design<br/>Reinforced beauty and texture</h3>
+            <p class="desc">The inherent high-quality texture of the metal is unmatched by plastic or glass. After 200 processes of <br/>intricate polishing, a piece of light but strong aluminum alloy used in aircraft emerges as the integrated <br/>case of the Terra. </p>
+        </div>
+        <div class="img">
+        	<div class="sj3-1"><img src="../images/qikuterra/sj3-1.png" width="758" height="582" alt=""/></div>
+            <div class="sj3-2"><img src="../images/qikuterra/sj3-2.png" width="715" height="478" alt=""/></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section sj-function04 animate-init">
+	<div class="container">
+        <div class="content">
+        	<h3 class="h3">165° palm curved design<br/>Palm friendly</h3>
+            <p class="desc">Considering the best ergonomic hand feeling for users, we take human engineering factors into account,<br/> discovering that 165° arc is the most natural palm curved design, relaxing and comfortable.</p>
+        </div>
+        <div class="img">
+        	<div class="sj4-1"><img src="../images/qikuterra/sj4-1.png" alt=""/></div>
+            <div class="sj4-2"><img src="../images/qikuterra/sj4-2.png" alt=""/></div>
+            <div class="sj4-3"><img src="../images/qikuterra/sj4-3.png" alt=""/></div>
+            <div class="sj4-4"><img src="../images/qikuterra/sj4-4.png" alt=""/></div>
+            <div class="sj4-5"><img src="../images/qikuterra/sj4-5.png" alt=""/></div>
+            <div class="sj4-6"><img src="../images/qikuterra/sj4-6.png" alt=""/></div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="section sj-function05 animate-init">
+	<div class="container">
+        <div class="content">
+        	<h3 class="h3">Same Sand Blasting Craftsmanship as <br/>iPhone 6s Plus</h3>
+            <p class="desc">Instead of a cold surface, Terra provides a texture that is <br/>as smooth as satin with the 3D sand blasting technique. It is <br/>comfortable to hold the phone in the hand thanks to the<br/> polished zirconia beads and microscopic sand<br/> blasting, which is comparable to <br/>the iPhone 6s Plus.</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="section sj-function06 animate-init">
+	<div class="container">
+        <div class="content">
+        	<h3 class="h3">3D Spherical Drill<br/>A Work of Art on the Arc</h3>
+            <p class="desc">The balance of aesthetic beauty and comfortable feel achieved by the arc design of<br/>QiKU phone requires high-grade manufacturing techniques. Uneven openings were <br/>solved by the planar cutting technique. Therefore, we have adopted the latest 3D <br/>spherical drill technique to polish the edges of openings with a CCD radar probe.<br/> The entire process requires a dust free environment, and takes three times longer<br/> than the ordinary technical process.</p>
+            <p class="sj06-desc1"><span style="font-size:25px">3X</span> the time to manufacture</p><br/>
+            <!-- <p class="sj06-desc2">3</p> -->
+            <!-- <p class="sj06-desc3">å€</p>  -->
+            <p class="sj06-desc4"><span style="font-size:25px">2X</span> the labor cost</p>
+            <!-- <p class="sj06-desc5">2</p> -->
+            <!-- <p class="sj06-desc6">å€</p> -->
+        </div>
+    </div>
+</div>
+
+
+<div class="section sj-function07 animate-init">
+	<div class="container">
+        <div class="content">
+        	<h3 class="h3">Seamlessly Cutting-edge Craftsmanship</h3>
+            <p class="desc">The Terra is functional as well as attractive. The quality of the zero RF interference aluminum alloy ensures good reception; the seamless connection to the backplane is obtained through a 90 degree cut with high precision and smoothness. In this case, the overflow of the signal is ensured without affecting the integrity of the metal case.</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="section sj-function08 animate-init">
+	<div class="container">
+        <div class="content">
+ 			<div class="video1 fr"><video  src="http://res.qiku.com/zt/ultimate/video/card_slot.mp4" width="580px" height="325px"  autoplay controls  poster="../images/qikuterra/video_2.jpg"/>
+           	<img src="../images/qikuterra/video_2.jpg" width="580px" height="325px"/>
+            æ‚¨çš„æµè§ˆå™¨ä¸æ”¯æŒ video æ ‡ç­¾ã€‚
+            </video></div>
+          	<div class="video2 fl"><video  src="http://res.qiku.com/zt/ultimate/video/screen_contrast.mp4" width="580px"  height="325px"  autoplay controls poster="../images/qikuterra/video_1.jpg">
+            <img src="../images/qikuterra/video_1.jpg" width="580px" height="325px"/>
+            æ‚¨çš„æµè§ˆå™¨ä¸æ”¯æŒ video æ ‡ç­¾ã€‚
+            </video></div>
+             <p class=" desc sj8-desc1">Put the 6-inch screen into a <br/>5.5-inch  iPhone 6s Plus</p>
+              <p class=" desc sj8-desc2">Adaptive seamless card tray<br/> Perfect fit to eliminate all gaps</p>
+        </div>
+    </div>
+</div>
+
+<footer class="text-off-white">
+            
+                <div class="">
+                	<div class="container">
+                    	<div class="row wow bounceInLeft" data-wow-delay="0.4s">
+
+                            <div class="col-md-9 footer-text-color"><br><br><br>Customer Service support@qiku.com</div>
+                            <div class="col-md-3 text-right footer-text-color text-align-centralize"><br><br><br><i class="fa fa-phone"></i>&nbsp;&nbsp;hotline (+86)0755-83308000</div>
+                            <div class="col-md-12 col-sm-12 col-xs-12"><p style="line-height:12px;">&nbsp;</p><a href="#" class="footer-hyperlink">About Qiku</a>&nbsp;|&nbsp;<a target="_blank" href="https://gadgets360.com/shop/qiku-q-terra-silver-16-gb-3235322d333938" class="footer-hyperlink">
+                            Where to Buy</a>&nbsp;|&nbsp;<a href="http://blog.qiku.com/index.php/2015/12/02/q-invites/" class="footer-hyperlink">Q-Invite</a><p style="line-height:12px;">&nbsp;</p></div>
+                            <div class="col-md-9 footer-text-color">&copy; 2016 Qiku Internet Network Scientific (Shenzhen) Co. Ltd. All rights reserved</div>
+                            <div class="col-md-3 text-right text-align-centralize"><a href="https://www.facebook.com/QikuIN/" target="_blank" class="footer-hyperlink"><i class="fa fa-facebook f_14"></i></a>&nbsp;&nbsp;
+                            <!--<a href="" class="footer-hyperlink"><i class="fa fa-instagram f_14"></i></a>&nbsp;&nbsp;-->
+                            <a href="https://twitter.com/qikuindia" target="_blank" class="footer-hyperlink"><i class="fa fa-twitter f_14"></i></a>&nbsp;&nbsp;<br><br><br>
+                            <!--<a href="" class="footer-hyperlink"><i class="fa fa-google-plus f_14"></i></a> -->
+                            </div>
+                        </div> <!-- /.row -->
+                    </div> <!-- /.container -->
+                </div>
+                
+            </footer>
+
+    <script type="text/javascript" src="http://js.qiku.com/js/o_code.js"></script>
+
+
+
+</body>
+</html>
+
+
+
