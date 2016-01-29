@@ -29,7 +29,42 @@ b,em,i{display:inline-block; font-weight:normal; font-style:normal;}
 .ls1{letter-spacing:1px;}
 .ls1.5{letter-spacing:1.5px;}
 .ls2{letter-spacing:2px;}
+/* navigation for map goes here */
+/* navbar example for maps*/
+.navbar-nav > li >  ul > li > a {
+	padding: 24px 0;
+	margin-left: 10px;
+    margin-right: 15px;
+	text-transform: none;
+	font-size: 13px;
+	font-weight: 600;
+	color:#000;
+	text-decoration:none;
+}
+.navbar-nav > li >  ul.map  {
+	display:none;
+	position:absolute;
+	width:inherit;
+}
+.navbar-nav > li:hover >  ul  {
+	display:block;
+}
+.navbar-nav > li >  ul.map > li {
+	display:block;
+	background:#ffffff;
+	text-align: center;
+    padding: 15px 0px;
+}
+.additional-bodered-nav {
+border:1px solid #E8382F;
+}
+.navbar-nav > li > ul.map > li > a:hover,.navbar-nav > li > ul.map > li > a:focus,.navbar-nav > li > ul .map> li >.active > a {
+    color: #000 !important;
+}
+/* Ends here */
 
+
+/* ends here */
 .container { width:1200px; height:100%; position:relative;  margin:0 auto;}
 
 .ml5 {margin-left:5px !important}

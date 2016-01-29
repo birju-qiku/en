@@ -22,6 +22,9 @@ a, a:hover, a:focus {
 .navbar-default .navbar-nav > li > ul > li > a:hover, .navbar-default .navbar-nav > li > ul > li > a:focus, .navbar-default .navbar-nav > li > ul > li >.active > a{
 	color: #fff !important;
 }
+.navbar-default .navbar-nav > li > ul.map > li > a:hover, .navbar-default .navbar-nav > li > ul.map > li > a:focus, .navbar-default .navbar-nav > li > ul.map > li >.active > a{
+	color: #000 !important;
+}
 
 .navbar-default.navbar-fixed-top.navbar-shrink .navbar-nav > li > a {
 	color: #a9a9a9;

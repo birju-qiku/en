@@ -251,7 +251,7 @@ section {
 /* sub menus */
 .navbar-nav > li >  ul > li > a {
 	padding: 24px 0;
-	margin-left: 15px;
+	margin-left: 10px;
     margin-right: 15px;
 	text-transform: none;
 	font-size: 13px;
@@ -270,6 +270,34 @@ section {
 .navbar-nav > li >  ul > li {
 	display:block;
 	background:#E8382F;
+	text-align: center;
+    padding: 15px 0px;
+}
+.additional-bodered-nav {
+border:1px solid #E8382F;
+}
+/* navbar example for maps*/
+.navbar-nav > li >  ul > li > a {
+	padding: 24px 0;
+	margin-left: 10px;
+    margin-right: 15px;
+	text-transform: none;
+	font-size: 13px;
+	font-weight: 600;
+	color:#000;
+	text-decoration:none;
+}
+.navbar-nav > li >  ul.map  {
+	display:none;
+	position:absolute;
+	width:inherit;
+}
+.navbar-nav > li:hover >  ul  {
+	display:block;
+}
+.navbar-nav > li >  ul.map > li {
+	display:block;
+	background:#ffffff;
 	text-align: center;
     padding: 15px 0px;
 }
