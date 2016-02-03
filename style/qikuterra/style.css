@@ -52,7 +52,7 @@ b,em,i{display:inline-block; font-weight:normal; font-style:normal;}
 .navbar-nav > li >  ul.map > li {
 	display:block;
 	background:#ffffff;
-	text-align: center;
+	text-align: left;
     padding: 15px 0px;
 }
 .additional-bodered-nav {
